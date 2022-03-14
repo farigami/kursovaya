@@ -1,0 +1,57 @@
+.card {
+    position: relative;
+    background-color: white;
+    width: 250px;
+    height: 460px;
+    margin: 2rem 1rem;
+    border-radius: 16px;
+    border: 2px solid rgb(192, 192, 192);
+}
+
+.poster {
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    margin: inherit;
+}
+
+.title {
+    margin: 0 16px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #404040;
+}
+
+.description {
+    font-size: 12px;
+    padding-top: 6px;
+    margin: 0 16px;
+    color: #7e7e7e;
+}
+
+.tools {
+    position: absolute;
+    padding: 8px 16px;
+    bottom: 0;
+}
+
+.tools span {
+    color: #3b3b3b;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.tools button {
+    color: #404040;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 4px;
+    margin-left: 26px;
+    background-color: rgb(235, 235, 235);
+    border: 0;
+    border-radius: 3px;
+}
+
+.tools button:hover {
+    background-color: rgb(190, 190, 190);
+}

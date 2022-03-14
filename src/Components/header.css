@@ -1,0 +1,59 @@
+.header {
+    display: flex;
+    height: 56px;
+    box-shadow: 0 8px 6px rgba(50, 50, 50, 0.289);
+    background-color: white;
+}
+
+.logo {
+    padding: 0 0 0 20px;
+}
+
+.logo img {
+    width: 46px;
+    height: 46px;
+}
+
+.logo, .logo span {
+    align-self: center;
+    font-size: 28px;
+    font-weight: 800;
+    font-family: monospace;
+    color: chocolate;
+}
+.logo span {
+    color: coral;
+}
+
+.about {
+    margin-left: auto;
+}
+
+.basket {
+    padding: 0 26px 0 0;
+}
+.header li {
+    justify-content: space-between;
+    align-self: center;
+    display: inline;
+    left: 0;
+    
+}
+
+.header li a {
+    color: #404040;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.basket span{
+    font-size: 14px;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #bee1ff;
+    text-align: center;
+}
+
