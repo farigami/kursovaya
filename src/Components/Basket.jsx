@@ -19,7 +19,7 @@ const Basket = ({items, total}) => {
                 </div>
                 )}
             )}
-            Всего к оплате: {total} ₽
+            {items.length ? <div className="total-price">Всего к оплате: {total} ₽</div> : <div className="empty-basket">Корзина пуста</div>}
         </div>
         </>
     )

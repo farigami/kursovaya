@@ -4,6 +4,15 @@
     flex-direction: column;
     justify-content: center;
     padding: 5rem;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.empty-basket {
+    align-self: center;
     font-size: 18px;
     font-weight: 800;
 }
