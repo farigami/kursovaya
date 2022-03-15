@@ -1,5 +1,11 @@
 @media (max-width: 420px){
-    .header span {
+    .header #pizza {
         display: none;
+    }
+    .item-description {
+        display: none
+    }
+    .item-price {
+        padding-left: 1rem;
     }
 }

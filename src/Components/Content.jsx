@@ -1,17 +1,19 @@
 import React from "react";
+import data from './data/items.json'
 import './content.css'
 
 
-import Card from "./Shards/Card";
+import Card from "./Card/Card";
 
-const Content = (items) => {
-    console.log(items.basket)
+const Content = () => {
     return (
+        <>
         <div className="content">
-            {items.items.map(item => (    
-                <Card key={item.title} item={item} basket={items.basket} handleAddProduct={items.handleAddProduct} />
+            {data.map(item => (    
+                <Card key={item.title} item={item}/>
             ))}
         </div>
+        </>
     )
 }
 

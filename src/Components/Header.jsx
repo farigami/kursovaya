@@ -1,28 +1,31 @@
 import React from "react";
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import './header.css'
 import logo from './image/pizza.png'
 
-const Header = (items) => {
-    console.log(items)
+const Header = (itemsCount) => {
     return (
         <>
         <div className="header">
-            <a 
-                href="/" 
+            <Link 
+                to="/" 
                 className="logo">
-                <img src={logo} alt=''/>Just <span>  Pizza</span>
-            </a>   
-            <li className="about"><a href="/">О нас</a></li>
+                <img src={logo} alt=''/>Just <span id="pizza">  Pizza</span>
+            </Link>   
+            <li className="about"><Link to="/about">О нас</Link></li>
             <li className="basket">
-            <a 
-                href="/basket"
+            <Link 
+                to="/basket"
                 >Корзина 
-                { items.basket.length < 10 ? <span>{items.basket.length}</span> : 
-                alert('Ало свинья куда тебе столько')}
-            </a></li> 
+                <span>{itemsCount.itemsCount}</span>  
+            </Link></li> 
         </div>
         </>
     )
 }
+const mapStateToProps = state => ({
+    itemsCount: state.cart.cartItems.reduce((acc, item) => acc += item.quantity, 0)
+  });
 
-export default Header
+export default connect(mapStateToProps)(Header)
