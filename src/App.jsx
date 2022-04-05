@@ -6,16 +6,16 @@ import About from "./Components/About/About";
 
 import './style.css'
 import './adaptive.css'
-import { Route, Routes  } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
     <>
-    <Routes>
-      <Route exact path='/' element={<Content /> } />
-      <Route exact path='/basket'element={<Basket /> } />
-      <Route exact path='/about'element={<About /> } />
-    </Routes>
+      <Routes>
+        <Route exact path='/' element={<Content />} />
+        <Route exact path='/basket' element={<Basket />} />
+        <Route exact path='/about' element={<About />} />
+      </Routes>
     </>
   )
 }

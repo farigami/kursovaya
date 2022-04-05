@@ -43,15 +43,15 @@
 
 .tools button {
     color: #404040;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 800;
-    padding: 4px;
+    padding: 6px;
     margin-left: 26px;
-    background-color: rgb(235, 235, 235);
+    background-color: #f3f2f2c4;
     border: 0;
     border-radius: 3px;
 }
 
 .tools button:hover {
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(221, 221, 221);
 }

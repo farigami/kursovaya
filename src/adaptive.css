@@ -1,4 +1,4 @@
-@media (max-width: 420px){
+@media (max-width: 500px){
     .header #pizza {
         display: none;
     }
@@ -7,5 +7,9 @@
     }
     .item-price {
         padding-left: 1rem;
+    }
+
+    .about-page img {
+        width: 350px;
     }
 }

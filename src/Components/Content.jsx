@@ -8,11 +8,11 @@ import Card from "./Card/Card";
 const Content = () => {
     return (
         <>
-        <div className="content">
-            {data.map(item => (    
-                <Card key={item.title} item={item}/>
-            ))}
-        </div>
+            <div className="content">
+                {data.map(item => (
+                    <Card key={item.title} item={item} />
+                ))}
+            </div>
         </>
     )
 }

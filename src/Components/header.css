@@ -1,7 +1,7 @@
 .header {
     display: flex;
     height: 56px;
-    box-shadow: 0 8px 6px rgba(50, 50, 50, 0.289);
+    box-shadow: 0 2px 6px rgba(50, 50, 50, 0.289);
     background-color: white;
 }
 
@@ -47,6 +47,12 @@
     padding: 10px;
 }
 
+
+.header li a:hover {
+    border-bottom: 2px solid #bee1ff;
+}
+
+
 .basket span{
     font-size: 14px;
     width: 18px;
@@ -55,5 +61,6 @@
     border-radius: 50%;
     background-color: #bee1ff;
     text-align: center;
+    top:14px
 }
 
