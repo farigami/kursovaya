@@ -12,7 +12,7 @@ const Card = ({ item, addItem }) => {
             <hr />
             <h1 className="title">{item.title}</h1>
             <h3 className="description">{item.description}</h3>
-            <div className="tools"><span>Цена: {item.price}₽ </span>
+            <div className="tools"><span>Цена: {item.price} ₽ </span>
                 <button onClick={() => addItem(item)}>Добавить</button>
             </div>
         </div>

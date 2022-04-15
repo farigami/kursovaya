@@ -12,7 +12,6 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <Header />
         <App />
       </BrowserRouter>
     </Provider>

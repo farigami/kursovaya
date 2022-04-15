@@ -6,6 +6,12 @@
     text-decoration: none;
 }
 
-body {
-    background-color: #f2f2f29c;
+body, html {
+    height: auto;
+    background: rgb(242,242,242);
+    background: linear-gradient(180deg, rgba(230,230,230,0.64) 0%, rgba(255,255,255,1) 100%);
+}
+
+#root {
+    min-height: 100vh;
 }

@@ -1,0 +1,17 @@
+.footer {
+    background-color: white;
+    display: flex;
+    position: absolute;
+    height: 56px;
+    width: 100%;
+}
+
+.contact {
+    margin-left: 1rem;
+    align-self: center;
+}
+.contact img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px
+}
