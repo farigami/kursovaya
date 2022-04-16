@@ -14,11 +14,14 @@ const App = () => {
   return (
     <>
       <Header />
-      <Routes>
-        <Route exact path='/' element={<Content />} />
-        <Route exact path='/basket' element={<Basket />} />
-        <Route exact path='/about' element={<About />} />
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route exact path='/' element={<Content />} />
+          <Route exact path='/basket' element={<Basket />} />
+          <Route exact path='/about' element={<About />} />
+        </Routes>
+      </div>
+      
       <Footer />
     </>
   )

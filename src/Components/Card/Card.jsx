@@ -5,9 +5,9 @@ import addItem from '../../redux/cart/cart.actions'
 
 import "./card.css"
 
-const Card = ({ item, addItem }) => {
+const Card = ({ item, addItem, key }) => {
     return (
-        <div key={item.index} className="card">
+        <div key={key} className="card">
             <img className="poster" src={item.poster} alt="" />
             <hr />
             <h1 className="title">{item.title}</h1>

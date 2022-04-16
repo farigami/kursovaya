@@ -1,7 +1,6 @@
 .footer {
     background-color: white;
     display: flex;
-    position: absolute;
     height: 56px;
     width: 100%;
 }
