@@ -1,9 +1,12 @@
 import React from "react";
 import './basket.css'
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import { removeItemById } from '../../redux/cart/cart.actions'
+
 import emptyBasket from "../image/emptyBasket.svg";
 
-const Basket = ({ items, total }) => {
+const Basket = ({ items, total, removeItem }) => {
     return (
         <>
             <div className="basket-section">
@@ -12,7 +15,6 @@ const Basket = ({ items, total }) => {
                         <div className="basket-items">
                             {items.map(item => {
                                 return (
-
                                     <div key={item.id} className="item-section">
                                         <div className="item-main">
                                             <div className="item-icon"><img src={item.poster} alt="" /></div>
@@ -20,7 +22,11 @@ const Basket = ({ items, total }) => {
                                         </div>
                                         <div className="item-data">
                                             <div className="item-quanity">Кол-во: {item.quantity}</div>
-                                            <div className="item-price">{item.price}₽</div>
+                                            <div className="item-curr">
+                                                <div className="item-price">{item.price}₽</div>
+                                                <Link to='' className="item-delete" onClick={() => {removeItem(item.id)}}>+</Link>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 )
@@ -29,8 +35,8 @@ const Basket = ({ items, total }) => {
                         </div>
                         <div className="offer-form">
                             <input type="text" placeholder="Имя" />
-                            <input type="number" placeholder="Номер телефона" />
-                            <input type="text" placeholder="Комментарий" />
+                            <input type="tel" placeholder="Номер телефона" />
+                            <input type="text" placeholder="Адрес" />
                             <div className="total-price">Всего к оплате: {total} ₽</div>
                             <button>Оформить Заказ</button>
                         </div>
@@ -44,7 +50,6 @@ const Basket = ({ items, total }) => {
                         <h2>Вероятней всего, вы не заказывали ещё пиццу. Для того, чтобы заказать пиццу, перейди на главную страницу.</h2>
                     </div>}
             </div>
-            <div style={{clear:'both'}}></div>
         </>
     )
 }
@@ -53,4 +58,9 @@ const mapStateToProps = ({ cart: { cartItems } }) => ({
     total: cartItems.reduce((acc, item) => acc += item.price * item.quantity, 0)
 });
 
-export default connect(mapStateToProps)(Basket)
+const mapDispatchToProps = dispatch => ({
+    removeItem: id => dispatch(removeItemById(id))
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Basket)

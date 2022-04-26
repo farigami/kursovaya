@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './header.css'
 import logo from './image/pizza.png'
 
-const Header = (itemsCount) => {
+const Header = (itemsCount, items) => {
     return (
         <>
             <div className="header">
@@ -18,8 +18,9 @@ const Header = (itemsCount) => {
                     <Link
                         to="/basket"
                     >Корзина
-                        <span>{itemsCount.itemsCount}</span>
+                        { itemsCount.itemsCount > 0 ? <span>{itemsCount.itemsCount}</span> : null}
                     </Link></li>
+
             </div>
         </>
     )

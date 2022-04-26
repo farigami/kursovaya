@@ -5,4 +5,10 @@ const addItem = item => ({
   payload: item
 });
 
+export const removeItemById = id => ({
+  type: CartActionTypes.REMOVE_ITEM,
+  payload: id
+})
+
+
 export default addItem

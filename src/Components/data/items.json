@@ -6,7 +6,7 @@
         "poster": "https://cdn-2.smartofood.ru/uploads/eda72/iiko/e3139485-62fb-4e09-ada6-382803587734_preview.jpg",
         "type": "pizza",
         "description": "Пикантный томатный соус, сыр, говяжья шейка, помидор, сушеный базилик",
-        "price": 999
+        "price": 1
     },
     {   
         "id": 2,
@@ -14,7 +14,7 @@
         "poster": "https://cdn-2.smartofood.ru/uploads/eda72/iiko/824953a7-a002-47d0-9813-a5f99cc57675_preview.jpg",
         "type": "pizza",
         "description": "Пикантный томатный соус, сыр, ветчина, ананас, сушеный базилик",
-        "price": 999
+        "price": 1
     }, 
     {   
         "id": 3,
@@ -22,46 +22,39 @@
         "poster": "https://cdn-2.smartofood.ru/uploads/eda72/iiko/bd72a8f4-995a-4df9-ac1f-a2b3054633d4_preview.jpg",
         "type": "pizza",
         "description": "Пикантный томатный соус, сыр, ветчина, грибы, лук, помидоры, сушеный базилик",
-        "price": 999
-    },
-    {   
-        "id": 4,
-        "title": "Ливорно",
-        "poster": "https://cdn-2.smartofood.ru/uploads/eda72/iiko/78558f3b-1cd9-47ee-ac1b-fb24b9ed5893_preview.jpg",
-        "type": "pizza",
-        "description": "Пикантный томатный соус, сыр, мясной фарш (свинина-говядина), грибы, сушеный базилик",
-        "price": 999
+        "price": 1
     },
     {   
         "id": 5,
-        "title": "Азия",
-        "poster": "https://cdn-2.smartofood.ru/uploads/eda72/iiko/e3139485-62fb-4e09-ada6-382803587734_preview.jpg",
+        "title": "Чикита",
+        "poster": "https://cdn-2.smartofood.ru/uploads/eda72/iiko/fa78ef7b-c615-40f9-affc-6c5433dc3688_preview.jpg",
         "type": "pizza",
-        "description": "Пикантный томатный соус, сыр, говяжья шейка, помидор, сушеный базилик",
-        "price": 999
+        "description": "Пикантный томатный соус, сыр, мясной фарш (свинина-говядина), грибы, сушеный базилик",
+        "price": 1
     },
     {   
         "id": 6,
-        "title": "Гавайи",
-        "poster": "https://cdn-2.smartofood.ru/uploads/eda72/iiko/824953a7-a002-47d0-9813-a5f99cc57675_preview.jpg",
-        "type": "pizza",
-        "description": "Пикантный томатный соус, сыр, ветчина, ананас, сушеный базилик",
-        "price": 999
-    }, 
-    {   
-        "id": 7,
-        "title": "Везувий",
-        "poster": "https://cdn-2.smartofood.ru/uploads/eda72/iiko/bd72a8f4-995a-4df9-ac1f-a2b3054633d4_preview.jpg",
-        "type": "pizza",
-        "description": "Пикантный томатный соус, сыр, ветчина, грибы, лук, помидоры, сушеный базилик",
-        "price": 999
-    },
-    {   
-        "id": 8,
         "title": "Ливорно",
         "poster": "https://cdn-2.smartofood.ru/uploads/eda72/iiko/78558f3b-1cd9-47ee-ac1b-fb24b9ed5893_preview.jpg",
         "type": "pizza",
-        "description": "Пикантный томатный соус, сыр, мясной фарш (свинина-говядина), грибы, сушеный базилик",
-        "price": 999
+        "description": "Пикантный томатный соус, сыр, куриное копченое филе, перец Болгарский, ананасы, сушеный базилик",
+        "price": 1
+    },
+    {   
+        "id": 7,
+        "title": "Маринара",
+        "poster": "https://cdn-2.smartofood.ru/uploads/eda72/iiko/04f85c04-3667-46bc-a87b-d2ec1116d36b_preview.jpg",
+        "type": "pizza",
+        "description": "Пикантный томатный соус, морепродукты в чесночном соусе, сыр, сушеный базилик",
+        "price": 1
+    },
+    {   
+        "id": 8,
+        "title": "К пиву",
+        "poster": "https://cdn-2.smartofood.ru/uploads/eda72/iiko/00c71eeb-537e-4fbf-abbe-7add6c22ba9b_preview.jpg",
+        "type": "pizza",
+        "description": "чесночный соус, сыр",
+        "price": 1
     }
+   
 ]
